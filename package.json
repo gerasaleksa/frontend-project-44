@@ -1,0 +1,19 @@
+{
+  "name": "@hexlet/code",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "make": "^0.8.1"
+  },
+  "bin": {
+  "brain-games": "bin/brain-games.js"
+}
+}
