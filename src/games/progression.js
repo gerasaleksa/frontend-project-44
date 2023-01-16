@@ -1,8 +1,7 @@
 import basisGames from '../index.js';
+import getRandomNum from '../random.js';
 
 const rule = 'What number is missing in the progression?';
-
-const randomNumber = (from, to) => Math.round(Math.random() * (to - from) + from);
 
 const getProgression = (size, start = 0, step = 1) => {
   const result = [];
@@ -13,11 +12,11 @@ const getProgression = (size, start = 0, step = 1) => {
 };
 
 const game = () => {
-  const sizeProgression = randomNumber(6, 8);
-  const startProgression = randomNumber(0, 1);
-  const stepProgression = randomNumber(1, 2);
+  const sizeProgression = getRandomNum(6, 8);
+  const startProgression = getRandomNum(0, 1);
+  const stepProgression = getRandomNum(1, 2);
   const progression = getProgression(sizeProgression, startProgression, stepProgression);
-  const hiddenIndex = randomNumber(0, progression.length);
+  const hiddenIndex = getRandomNum(0, progression.length);
   const hiddenNumber = progression[hiddenIndex];
   progression[hiddenIndex] = '..';
   const rightAnswer = String(hiddenNumber);
@@ -25,7 +24,7 @@ const game = () => {
   return [rightAnswer, question];
 };
 
-const isGameProg = () => {
+const getGameProg = () => {
   basisGames(game, rule);
 };
-export default isGameProg;
+export default getGameProg;

@@ -1,6 +1,10 @@
 import basisGames from '../index.js';
+import getRandomNum from '../random.js';
 
 const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
+const rangemin = 1;
+const rangemax = 100;
 
 const isPrime = (numsave) => {
   for (let i = 2; i < numsave; i += 1) {
@@ -12,14 +16,14 @@ const isPrime = (numsave) => {
 };
 
 const game = () => {
-  const numsave = (Math.round(Math.random() * 100));
+  const numsave = getRandomNum(rangemin, rangemax);
   const rightAnswer = isPrime(numsave) ? 'yes' : 'no';
   const question = numsave;
   return [rightAnswer, question];
 };
 
-const isGamePrime = () => {
+const getGamePrime = () => {
   basisGames(game, rule);
 };
 
-export default isGamePrime;
+export default getGamePrime;
