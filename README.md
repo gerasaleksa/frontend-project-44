@@ -7,13 +7,23 @@
 4. To start the game "find the largest divisor" enter the command 'brain-gcd': https://asciinema.org/a/wfvT6UGN0uzD15U01yKEnd17s
 5. To start the "prime number" game enter the command 'brain-prime': https://asciinema.org/a/nU5v04SDeMBuOvlPjHZTcwxpw
 6. To start the "geometric progression" game, enter the command 'brain-progression': https://asciinema.org/a/KhaUhig0jLVPkl17ZRgTfueab
+
 Setup:
+
 Enter on the command line: git clone git@github.com:gerasaleksa/frontend-project-44.git
+
 Enter on the command line: cd frontend-project-44
+
 Enter on the command line: npm ci
+
 Enter on the command line: npm link
+
 Select the game from the list above
+
 Enter name of the game. For example: brain-even
+
 Enter your name when the game asks
+
 Follow the instructions in the game
+
 Good luck!
