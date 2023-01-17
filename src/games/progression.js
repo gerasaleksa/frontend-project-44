@@ -3,6 +3,13 @@ import getRandomNum from '../random.js';
 
 const rule = 'What number is missing in the progression?';
 
+const minNumForSize = 6;
+const maxNumForSize = 8;
+const minNumForStart = 0;
+const maxNumForStart = 1;
+const minNumForStep = 1;
+const maxNumForStep = 2;
+
 const getProgression = (size, start = 0, step = 1) => {
   const result = [];
   for (let i = 0; i < size; i += 1) {
@@ -12,9 +19,9 @@ const getProgression = (size, start = 0, step = 1) => {
 };
 
 const game = () => {
-  const sizeProgression = getRandomNum(6, 8);
-  const startProgression = getRandomNum(0, 1);
-  const stepProgression = getRandomNum(1, 2);
+  const sizeProgression = getRandomNum(minNumForSize, maxNumForSize);
+  const startProgression = getRandomNum(minNumForStart, maxNumForStart);
+  const stepProgression = getRandomNum(minNumForStep, maxNumForStep);
   const progression = getProgression(sizeProgression, startProgression, stepProgression);
   const hiddenIndex = getRandomNum(0, progression.length);
   const hiddenNumber = progression[hiddenIndex];

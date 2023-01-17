@@ -8,7 +8,7 @@ const rangemax = 100;
 
 const randsign = () => {
   const coll = ['-', '+', '*'];
-  const random = Math.floor(Math.random() * coll.length);
+  const random = getRandomNum() * coll.length;
   const ran = coll[random];
   return ran;
 };
