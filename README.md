@@ -1,5 +1,6 @@
 # PROJECT "GAMES OF THE MIND"
 
+<<<<<<< HEAD
 "GAMES OF THE MIND" is a set of five console games, which built on the principle of popular mobile applications for pumping the brain. Each game asks questions that need to be answered correctly. After three correct answers, the game is considered to be completed. Wrong answers end the game and offer to play it again. 
 
 ## Game examples:
